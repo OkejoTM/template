@@ -1,0 +1,231 @@
+/* styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Root Variables */
+:root {
+  /* Основная палитра */
+
+  --color-navbar: #58427c; /* Цвет навбара (хедер) и футера */
+  --color-buttons: #58427c; /* Цвет кнопок */
+  --color-dark-cards-bg: #58427c; /* Цвет фона темных карточек */
+  --color-light-cards-text: #77c3dd; /* Цвет текста на светлых карточках */
+  --color-icons-on-light-cards: #77c3dd; /* Цвет иконок на светлых карточках */
+  --color-footer-bg: #58427c; /* Цвет фона футера */
+  --color-headings-draft: #58427c; /* Цвет заголовков в разработке */
+
+  --color-gradient-start: #77c3dd; /* Начало градиента */
+  --color-gradient-end: #58427c; /* Конец градиента */
+
+  --color-dark-text-on-dark-elements: #e0e0e0; /* Текст на тёмных элементах */
+  --color-gradient-reviews-start: #f2f4f7; /* Градиент отзывов (начало) */
+  --color-gradient-reviews-end: #ece7f3; /* Градиент отзывов (конец) */
+
+  --color-site-background: #f2f0f5; /* Фоновый цвет сайта (фон страницы) */
+
+  --color-muted-text: #4c484b; /* Цвет подписей, описаний */
+  --color-primary-text: #2b2b2b; /* Основной цвет текста (заголовки, основной текст) */
+  --color-black-text: #000000; /* Черный цвет текста */
+  --color-headings-text: #2b2b2b; /* Цвет заголовков */
+}
+
+/* Удобные классы для быстрого использования */
+
+.bg-navbar {
+  background-color: var(--color-navbar); /* Фон навбара */
+}
+
+.text-buttons {
+  color: var(--color-buttons); /* Цвет текста кнопок */
+}
+
+.bg-dark-cards {
+  background-color: var(--color-dark-cards-bg); /* Фон темных карточек */
+}
+
+.text-light-cards {
+  color: var(--color-light-cards-text); /* Текст светлых карточек */
+}
+
+.text-icons-on-light-cards {
+  color: var(--color-icons-on-light-cards); /* Иконки на светлых карточках */
+}
+
+.bg-footer {
+  background-color: var(--color-footer-bg); /* Фон футера */
+}
+
+.scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.text-headings-draft {
+  color: var(--color-headings-draft); /* Заголовки в разработке */
+}
+
+.bg-gradient-start {
+  background-color: var(--color-gradient-start); /* Начало градиента */
+}
+
+.bg-gradient-end {
+  background-color: var(--color-gradient-end); /* Конец градиента */
+}
+
+.text-dark-text-on-dark-elements {
+  color: var(
+    --color-dark-text-on-dark-elements
+  ); /* Текст на темных элементах */
+}
+
+.bg-gradient-reviews-start {
+  background-color: var(
+    --color-gradient-reviews-start
+  ); /* Начало градиента отзывов */
+}
+
+.bg-gradient-reviews-end {
+  background-color: var(
+    --color-gradient-reviews-end
+  ); /* Конец градиента отзывов */
+}
+
+.bg-site {
+  background-color: var(--color-site-background); /* Фон сайта */
+}
+
+.text-muted {
+  color: var(--color-muted-text); /* Подписи, описания */
+}
+
+.text-primary {
+  color: var(--color-primary-text); /* Основной текст */
+}
+
+.text-black {
+  color: var(--color-black-text); /* Черный текст */
+}
+
+.text-headings {
+  color: var(--color-headings-text); /* Цвет заголовков */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+.input-field {
+  @apply w-full p-3 bg-slate-300 rounded-xl text-black mt-2 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 ease-in-out;
+}
+
+/* Global Body Styles */
+body {
+  background-color: #f2f0f5;
+  color: var(--foreground);
+}
+
+/* Utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Components */
+@layer components {
+  /* Button styles */
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight;
+  }
+
+  .btn-primary {
+    @apply btn bg-black text-white relative overflow-hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06),
+      inset 0 2px 4px 0 rgba(255, 255, 255, 0.06),
+      inset 0 -2px 4px 0 rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+  }
+
+  .btn-primary:hover {
+    @apply bg-gray-900;
+    box-shadow: 0 6px 8px -2px rgba(0, 0, 0, 0.12),
+      0 4px 6px -2px rgba(0, 0, 0, 0.08),
+      inset 0 2px 4px 0 rgba(255, 255, 255, 0.08),
+      inset 0 -2px 4px 0 rgba(0, 0, 0, 0.18);
+    transform: translateY(-2px);
+  }
+
+  .btn-primary:active {
+    @apply bg-gray-800;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.1),
+      0 1px 2px -1px rgba(0, 0, 0, 0.06), inset 0 2px 4px 0 rgba(0, 0, 0, 0.1),
+      inset 0 -2px 4px 0 rgba(255, 255, 255, 0.05);
+    transform: translateY(1px);
+  }
+
+  .btn-inverse {
+    @apply btn bg-white text-black relative overflow-hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05),
+      0 2px 4px -1px rgba(0, 0, 0, 0.03), inset 0 2px 4px 0 rgba(0, 0, 0, 0.03),
+      inset 0 -2px 4px 0 rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .btn-inverse:hover {
+    @apply bg-gray-100;
+    box-shadow: 0 6px 8px -2px rgba(0, 0, 0, 0.08),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05), inset 0 2px 4px 0 rgba(0, 0, 0, 0.04),
+      inset 0 -2px 4px 0 rgba(255, 255, 255, 0.12);
+    transform: translateY(-2px);
+  }
+
+  .btn-inverse:active {
+    @apply bg-gray-200;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06),
+      0 1px 2px -1px rgba(0, 0, 0, 0.03), inset 0 2px 4px 0 rgba(0, 0, 0, 0.06),
+      inset 0 -2px 4px 0 rgba(255, 255, 255, 0.08);
+    transform: translateY(1px);
+  }
+
+  .btn-text {
+    @apply btn text-black bg-transparent;
+  }
+
+  /* Layout */
+  .centered-content-container {
+    @apply flex flex-col items-center md:max-w-[540px] mx-auto;
+  }
+  .scrollbar-hide {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+}
+
+
+
+@keyframes gradient-x {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 3s ease infinite;
+}
+
+.transform-gpu {
+  transform: translateZ(0);
+}

@@ -1,0 +1,25 @@
+image: node:22
+
+stages:
+  - install
+  - build-check
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+
+install:
+  stage: install
+  script:
+    - corepack enable
+    - pnpm install  # или npm ci / yarn install
+  artifacts:
+    paths:
+      - node_modules/
+    expire_in: 1h
+
+build-check:
+  stage: build-check
+  script:
+    - pnpm run build  # или npm run build / yarn build

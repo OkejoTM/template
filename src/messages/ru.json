@@ -1,0 +1,140 @@
+{
+  "Header": {
+    "grapelab": "GrapeLab",
+    "cases": "Кейсы",
+    "team": "Команда",
+    "contacts": "Контакты"
+  },
+  "Hero": {
+    "title": "Разработка программного обеспечения",
+    "listItem1": "Создаем IT-решения, которые работают.",
+    "listItem2": "Помогаем вашему бизнесу стать эффективнее.",
+    "listItem3": "Разработка продуктов, которые решают ваши задачи.",
+    "listItem4": "Сопровождение от идеи до готового ПО.",
+    "listItem5": "Автоматизируем процессы – вы фокусируетесь на главном.",
+    "button": "Обсудить проект"
+  },
+  "CollaborationSection": {
+    "title": "Готовы к сотрудничеству?",
+    "button_joinTeam": "Присоединиться к команде",
+    "button_discussProject": "Обсудим проект?"
+  },
+  "DevelopmentProcessSection": {
+    "title": "Процесс разработки",
+    "analyticalWorkshop": {
+      "title": "Аналитический воркшоп",
+      "description": "Мы изучаем ваш бизнес, цели и приоритеты. Через мозговые штурмы анализируем текущие процессы и находим точки роста."
+    },
+    "solutionDesign": {
+      "title": "Проектирование",
+      "description": "На основе собранных требований мы создаём концепт, прототипы и проводим UX-тестирование будущего продукта или платформы."
+    },
+    "development": {
+      "title": "Разработка",
+      "description": "Программирование на основе утверждённого дизайна. Включает фазы Alpha, Beta и финальный релиз."
+    },
+    "testing": {
+      "title": "Тестирование",
+      "description": "Проводим тщательное QA-тестирование и валидацию, чтобы гарантировать готовность продукта к запуску."
+    },
+    "launchSupport": {
+      "title": "Запуск и поддержка",
+      "description": "После вашего одобрения мы запускаем продукт и управляем его размещением в облаке или локальной инфраструктуре."
+    },
+    "maintenance": {
+      "title": "Обслуживание",
+      "description": "Обеспечиваем техническую поддержку, исправление ошибок и регулярные обновления стратегии продукта."
+    }
+  },
+  "CasesSection": {
+    "title": "Кейсы",
+    "button_moreCases": "Больше кейсов",
+    "button_lessCases": "Меньше кейсов"
+  },
+  "ExtendedCasesSection": {
+    "title": "Кейсы",
+    "button_moreCases": "Больше кейсов",
+    "button_lessCases": "Меньше кейсов",
+    "allCategories": "Все"
+  },
+  "MapSection": {
+    "title": "Карта"
+  },
+  "PartnerSection": {
+    "title": "Нам доверяют",
+    "button_becomePartner": "Стать партнером"
+  },
+  "ReviewSection": {
+    "title": "Отзывы"
+  },
+  "TeamSection": {
+    "title": "Наша команда",
+    "button_more": "Больше",
+    "button_less": "Меньше",
+    "allCategories": "Все"
+  },
+  "TeamStats": {
+    "title": "Наша команда в цифрах",
+    "experience": "Лет совокупного опыта",
+    "projects": "Успешных проектов",
+    "countries": "Стран с клиентами",
+    "teamMembers": "Численность команды",
+    "specialization": "Специализация",
+    "technologys": "Технологии"
+  },
+  "TechnologiesSection": {
+    "title": "Технологии, которые мы используем"
+  },
+  "ContactSection": {
+    "title": "Контакты",
+    "workingHours": {
+      "line1": "Мы работаем",
+      "from": "с",
+      "from_monday": "понедельника",
+      "from_friday": "пятницы",
+      "from_sunday": "воскресенья",
+      "from_saturday": "субботы",
+      "to_friday": "пятницу",
+      "to_sunday": "воскресенье",
+      "to_saturday": "субботу",
+      "monday": "понедельник",
+      "friday": "пятница",
+      "sunday": "воскресенье",
+      "saturday": "суббота",
+      "to_days": "по",
+      "to_hours": "до",
+      "dayoff": "выходной",
+      "break": "перерыв"
+    },
+    "callUs": "Звоните",
+    "writeUs": "Пишите",
+    "visitUs": "Заходите в гости",
+    "socialMedia": "Пишите в социальных сетях"
+  },
+  "Footer": {
+    "grapelabTitle": "GrapeLab",
+    "description": "От концепции до готового продукта — создаем программное обеспечение, которое работает.",
+    "link": {
+      "cases": "Кейсы",
+      "services": "Услуги",
+      "aboutUs": "О нас",
+      "team": "Команда",
+      "navigation": "Навигация",
+      "contacts": "Контакты"
+    },
+    "privacyPolicy": "Политика конфиденциальности",
+    "TermsOfService": "Условия обслуживания",
+    "copyright": "GrapeLab — Студия программной инженерии"
+  },
+  "ErrorSection": {
+    "errorMessage": "Такой страницы нет",
+    "homeLinkText": "Вернуться на главную",
+    "reloadText": "Перезагрузить страницу"
+  },
+  "DevelopmentDirectionsSection": {
+    "title": "Направления разработки"
+  },
+  "DevelopmentDirectionCard": {
+    "learnMore": "Подробнее"
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "Header": {
+    "grapelab": "GrapeLab",
+    "cases": "Cases",
+    "team": "Team",
+    "contacts": "Contacts"
+  },
+  "Hero": {
+    "title": "Software Development Solutions",
+    "listItem1": "We create IT solutions that work.",
+    "listItem2": "We help your business become more efficient.",
+    "listItem3": "Development of products that solve your problems.",
+    "listItem4": "Support from idea to finished software.",
+    "listItem5": "We automate processes – you focus on what matters.",
+    "button": "Discuss a Project"
+  },
+  "CollaborationSection": {
+    "title": "Ready for Collaboration?",
+    "button_joinTeam": "Join the Team",
+    "button_discussProject": "Let's Discuss the Project?"
+  },
+  "DevelopmentProcessSection": {
+    "title": "Development Process",
+    "analyticalWorkshop": {
+      "title": "Analytical Workshop",
+      "description": "We study your business, goals, and priorities. Through brainstorming, we analyze current processes and find growth points."
+    },
+    "solutionDesign": {
+      "title": "Designing",
+      "description": "Based on collected requirements, we create a concept, prototypes, and conduct UX testing of the future product or platform."
+    },
+    "development": {
+      "title": "Development",
+      "description": "Programming based on the approved design. Includes Alpha, Beta, and final release phases."
+    },
+    "testing": {
+      "title": "Testing",
+      "description": "We conduct thorough QA testing and validation to ensure the product is ready for launch."
+    },
+    "launchSupport": {
+      "title": "Launch and Support",
+      "description": "After your approval, we launch the product and manage its deployment in the cloud or local infrastructure."
+    },
+    "maintenance": {
+      "title": "Maintenance",
+      "description": "We provide technical support, bug fixes, and regular product strategy updates."
+    }
+  },
+  "CasesSection": {
+    "title": "Cases",
+    "button_moreCases": "More Cases",
+    "button_lessCases": "Hide Cases"
+  },
+  "ExtendedCasesSection": {
+    "title": "Cases",
+    "button_moreCases": "More Cases",
+    "button_lessCases": "Hide Cases",
+    "allCategories": "All"
+  },
+  "MapSection": {
+    "title": "Map"
+  },
+  "PartnerSection": {
+    "title": "Our Partners",
+    "button_becomePartner": "Partner With Us"
+  },
+  "ReviewSection": {
+    "title": "Reviews"
+  },
+  "TeamSection": {
+    "title": "Our Team",
+    "button_more": "More",
+    "button_less": "Hide",
+    "allCategories": "All"
+  },
+  "TeamStats": {
+    "title": "Our Team in Numbers",
+    "experience": "Years of Combined Experience",
+    "projects": "Successful Projects",
+    "countries": "Countries with Clients",
+    "teamMembers": "Team Size",
+    "specialization": "Specialization",
+    "technologys": "Technologies"
+  },
+  "TechnologiesSection": {
+    "title": "Technologies We Use"
+  },
+  "ContactSection": {
+    "title": "Contacts",
+    "workingHours": {
+      "line1": "We work",
+      "from": "from",
+      "from_monday": "Monday",
+      "from_friday": "Friday",
+      "from_sunday": "Sunday",
+      "from_saturday": "Saturday",
+      "to_friday": "Friday",
+      "to_sunday": "Sunday",
+      "to_saturday": "Saturday",
+      "monday": "Monday",
+      "friday": "Friday",
+      "sunday": "Sunday",
+      "saturday": "Saturday",
+      "to_days": "to",
+      "to_hours": "to",
+      "dayoff": "day-off",
+      "break": "break"
+    },
+    "callUs": "Call us",
+    "writeUs": "Write us",
+    "visitUs": "Come on in for a visit",
+    "socialMedia": "Write on social media"
+  },
+  "Footer": {
+    "grapelabTitle": "GrapeLab",
+    "description": "From concept to finished product — we create software that works.",
+    "link": {
+      "cases": "Cases",
+      "services": "Services",
+      "aboutUs": "About Us",
+      "navigation": "Navigation",
+      "team": "Team",
+      "contacts": "Contacts"
+    },
+    "privacyPolicy": "Privacy policy",
+    "TermsOfService": "Terms of service",
+    "copyright": "GrapeLab — Software Engineering Studio"
+  },
+  "ErrorSection": {
+    "errorMessage": "Page not found",
+    "homeLinkText": "Return to home",
+    "reloadText": "Reload page"
+  },
+  "DevelopmentDirectionsSection": {
+    "title": "Development Directions"
+  },
+  "DevelopmentDirectionCard": {
+    "learnMore": "Learn More"
+  }
+}
