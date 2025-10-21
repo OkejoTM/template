@@ -1,7 +1,6 @@
 "use client";
 
 import SlidingButton from "@/components/SlidingButton";
-import { motion } from "framer-motion";
 import { FC } from "react";
 import grapelogo from "../../public/grapelogo.svg";
 import { useTranslations } from '@/lib/localize';
@@ -32,31 +31,23 @@ const Hero: FC = () => {
         </div>
         {/* Logo Section-only appears from lg: 1200px */}
         <div className='flex-1 hidden lg:flex justify-end'>
-          <motion.img
-            src={grapelogo.src}
-            alt='Grape logo'
-            className='
-              w-[140px] 
-              sm:w-[400px] 
-              md:w-[300px] 
-              lg:w-[400px] 
+            <img
+                src={grapelogo.src}
+                alt='Grape logo'
+                className='
+              logo-float-animation
+              w-[140px]
+              sm:w-[400px]
+              md:w-[300px]
+              lg:w-[400px]
               xl:w-[500px]
               h-auto
               m-auto
               object-contain
             '
-            animate={{
-              translateY: [-5, 5],
-            }}
-            transition={{
-              repeat: Infinity,
-              repeatType: 'mirror',
-              duration: 3,
-              ease: 'easeInOut',
-            }}
-          />
+            />
         </div>
-      </div>
+        </div>
     </section>
   );
 };

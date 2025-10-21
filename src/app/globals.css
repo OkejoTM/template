@@ -213,7 +213,18 @@ body {
   }
 }
 
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
 
+.logo-float-animation {
+    animation: floatAnimation 3s ease-in-out infinite alternate;
+}
 
 @keyframes gradient-x {
   0% { background-position: 0% 50%; }

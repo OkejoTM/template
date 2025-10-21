@@ -26,8 +26,8 @@ BEGIN
     -- Начало исполняемой части скрипта.
 
     -- Логирование в консоль psql о начале выполнения миграции.
-    RAISE NOTICE 'Starting migration of employee localizations from ID to nickname...';
-    RAISE NOTICE 'Lookup strategy: Find RU localization -> Find employee by RU name -> Delete conflicts -> Update.';
+    RAISE NOTICE 'Starting migration of employees localizations from ID to nickname...';
+    RAISE NOTICE 'Lookup strategy: Find RU localization -> Find employees by RU name -> Delete conflicts -> Update.';
 
     -- Основной цикл, который будет итерироваться по каждому уникальному ID старого сотрудника.
 FOR old_employee_id IN

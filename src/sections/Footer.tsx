@@ -106,10 +106,10 @@ const Footer: React.FC<FooterProps> = ({ data }) => {
         <div className='flex flex-col md:flex-row justify-between items-start md:items-center text-[12px] sm:text-[14px] text-white/80 gap-4'>
           <p>{t('copyright')}</p>
           <div className='flex flex-col sm:flex-row sm:space-x-4 space-y-1 sm:space-y-0'>
-            <a href='#' className='hover:underline'>
+            <a href='/privacy-policy' className='hover:underline'>
               {t('privacyPolicy')}
             </a>
-            <a href='#' className='hover:underline'>
+            <a href='/terms-of-use' className='hover:underline'>
               {t('TermsOfService')}
             </a>
           </div>
