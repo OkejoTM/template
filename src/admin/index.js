@@ -66,7 +66,29 @@ const adminOptions = {
       features: [makeUploadFeature('imagePath', 'projects')],
       options: {
         properties: {
-          metadata: { type: 'mixed' },
+          name: {
+            isTitle: true,
+          },
+          heroContent: {
+            type: 'textarea', // изменить с 'richtext' на 'textarea'
+            isVisible: { list: false, edit: true, show: true },
+          },
+          calloutContent: {
+            type: 'textarea', // изменить с 'richtext' на 'textarea'
+            isVisible: { list: false, edit: true, show: true },
+          },
+          aspectsList: {
+            type: 'textarea', // изменить с 'mixed' на 'textarea'
+            isVisible: { list: false, edit: true, show: true },
+          },
+          galleryImages: {
+            type: 'textarea', // изменить с 'mixed' на 'textarea'
+            isVisible: { list: false, edit: true, show: true },
+          },
+          projectTechStack: {
+            type: 'textarea', // изменить с 'mixed' на 'textarea'
+            isVisible: { list: false, edit: true, show: true },
+          },
         },
       },
     },
@@ -205,6 +227,22 @@ const adminOptions = {
               return request;
             },
           },
+        },
+      },
+    },
+    {
+      resource: { model: getModelByName('Service'), client: prisma },
+      options: {
+        properties: {
+          metadata: { type: 'mixed' },
+        },
+      },
+    },
+    {
+      resource: { model: getModelByName('ServiceFeature'), client: prisma },
+      options: {
+        properties: {
+          metadata: { type: 'mixed' },
         },
       },
     },

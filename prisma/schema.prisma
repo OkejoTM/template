@@ -35,6 +35,13 @@ model Project {
   createdAt   DateTime @default(now()) @map("created_at")
   updatedAt   DateTime @updatedAt @map("updated_at")
 
+  heroContent      String? @db.Text @map("hero_content")
+  calloutContent   String? @db.Text @map("callout_content") 
+  aspectsList      Json?   @map("aspects_list")
+  galleryImages    Json?   @map("gallery_images")
+  projectTechStack Json?   @map("project_tech_stack")
+
+
   partner   Partner?          @relation(fields: [partnerId], references: [id], onDelete: NoAction, onUpdate: NoAction)
   direction DevDirection?     @relation(fields: [directionId], references: [id], onDelete: NoAction, onUpdate: NoAction)
   employees ProjectEmployee[]
@@ -80,6 +87,7 @@ model Employee {
   isVisible       Boolean   @map("is_visible")
   email           String?
   role            String?
+  description     String?   @db.Text
   nickname        String?
   createdAt       DateTime  @default(now()) @map("created_at")
   updatedAt       DateTime  @updatedAt @map("updated_at")
@@ -150,4 +158,30 @@ model DynamicTranslationBuffer {
   @@map("dynamic_translations")
   @@unique([scope, sourceId])
   @@index([scope], name: "dynamic_translations_index")
+}
+
+model Service {
+  id          Int      @id @default(autoincrement())
+  rawName     String   @unique @map("raw_name")
+  isVisible   Boolean  @default(true) @map("is_visible")
+  sortOrder   Int      @default(0) @map("sort_order")
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  features ServiceFeature[]
+
+  @@map("services")
+}
+
+model ServiceFeature {
+  id        Int      @id @default(autoincrement())
+  serviceId Int      @map("service_id")
+  rawName   String   @map("raw_name")
+  sortOrder Int      @default(0) @map("sort_order")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  service Service @relation(fields: [serviceId], references: [id], onDelete: Cascade)
+
+  @@map("service_features")
 }
