@@ -123,46 +123,25 @@ export const cases = {
   },
 };
 
-export const projectPageContent = {
-  type: 'object',
-  properties: {
-    aspectsList: {
-      type: 'array',
-      items: {
-        type: 'object',
-        properties: {
-          title: { type: 'string' },
-          description: { type: 'string' }
-        },
-        required: ['title', 'description'],
-        additionalProperties: false
-      }
+export const aspectsList = {
+  type: 'array',
+  items: {
+    type: 'object',
+    properties: {
+      title: { type: 'string' },
+      description: { type: 'string' }
     },
-    galleryImages: {
-      type: 'array',
-      items: { type: 'string' }
-    },
-    projectTechStack: {
-      type: 'array',
-      items: {
-        type: 'object',
-        properties: {
-          name: { type: 'string' },
-          icon: { type: 'string' }
-        },
-        required: ['name'],
-        additionalProperties: false
-      }
-    }
-  },
-  additionalProperties: false
+    required: ['title', 'description'],
+    additionalProperties: false
+  }
 };
-
 
 export const definedSchemas = {
   contacts,
   stats,
   techstack,
   cases,
-  projectPageContent,
+  aspectsList,                 
+  galleryImages: techstack,    
+  projectTechStack: techstack,
 };
