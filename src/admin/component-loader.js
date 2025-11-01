@@ -12,4 +12,9 @@ export const RefTableContentEditor = componentLoader.add(
   path.join(__dirname, 'components/RefTableEditor.tsx')
 );
 
+export const JsonEditor = componentLoader.add(
+  'JsonEditor',
+  path.join(__dirname, 'components/JsonEditor.tsx')
+);
+
 export default componentLoader;

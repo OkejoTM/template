@@ -8,7 +8,7 @@ import dotenv from 'dotenv';
 import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import componentLoader, { RefTableContentEditor } from './component-loader.js';
+import componentLoader, { RefTableContentEditor, JsonEditor } from './component-loader.js';
 import { makeUploadFeature } from './upload.js';
 
 dotenv.config();
@@ -78,16 +78,28 @@ const adminOptions = {
             isVisible: { list: false, edit: true, show: true },
           },
           aspectsList: {
-            type: 'textarea', // изменить с 'mixed' на 'textarea'
+            type: 'mixed',
             isVisible: { list: false, edit: true, show: true },
+            components: {
+              edit: JsonEditor,
+              show: JsonEditor,
+            },
           },
           galleryImages: {
-            type: 'textarea', // изменить с 'mixed' на 'textarea'
+            type: 'mixed',
             isVisible: { list: false, edit: true, show: true },
+            components: {
+              edit: JsonEditor,
+              show: JsonEditor,
+            },
           },
           projectTechStack: {
-            type: 'textarea', // изменить с 'mixed' на 'textarea'
+            type: 'mixed',
             isVisible: { list: false, edit: true, show: true },
+            components: {
+              edit: JsonEditor,
+              show: JsonEditor,
+            },
           },
         },
       },
@@ -97,7 +109,14 @@ const adminOptions = {
       features: [makeUploadFeature('imagePath', 'partners')],
       options: {
         properties: {
-          metadata: { type: 'mixed' },
+          metadata: {
+            type: 'mixed',
+            isVisible: { list: false, edit: true, show: true },
+            components: {
+              edit: JsonEditor,
+              show: JsonEditor,
+            },
+          },
         },
       },
     },
@@ -106,7 +125,14 @@ const adminOptions = {
       features: [makeUploadFeature('imagePath', 'icons')],
       options: {
         properties: {
-          metadata: { type: 'mixed' },
+          metadata: {
+            type: 'mixed',
+            isVisible: { list: false, edit: true, show: true },
+            components: {
+              edit: JsonEditor,
+              show: JsonEditor,
+            },
+          },
         },
       },
     },
@@ -115,7 +141,14 @@ const adminOptions = {
       features: [makeUploadFeature('imagePath', 'employees')],
       options: {
         properties: {
-          metadata: { type: 'mixed' },
+          metadata: {
+            type: 'mixed',
+            isVisible: { list: false, edit: true, show: true },
+            components: {
+              edit: JsonEditor,
+              show: JsonEditor,
+            },
+          },
         },
       },
     },
@@ -234,7 +267,14 @@ const adminOptions = {
       resource: { model: getModelByName('Service'), client: prisma },
       options: {
         properties: {
-          metadata: { type: 'mixed' },
+          metadata: {
+            type: 'mixed',
+            isVisible: { list: false, edit: true, show: true },
+            components: {
+              edit: JsonEditor,
+              show: JsonEditor,
+            },
+          },
         },
       },
     },
@@ -242,7 +282,14 @@ const adminOptions = {
       resource: { model: getModelByName('ServiceFeature'), client: prisma },
       options: {
         properties: {
-          metadata: { type: 'mixed' },
+          metadata: {
+            type: 'mixed',
+            isVisible: { list: false, edit: true, show: true },
+            components: {
+              edit: JsonEditor,
+              show: JsonEditor,
+            },
+          },
         },
       },
     },
