@@ -109,14 +109,7 @@ const adminOptions = {
       features: [makeUploadFeature('imagePath', 'partners')],
       options: {
         properties: {
-          metadata: {
-            type: 'mixed',
-            isVisible: { list: false, edit: true, show: true },
-            components: {
-              edit: JsonEditor,
-              show: JsonEditor,
-            },
-          },
+          metadata: { type: 'mixed' },
         },
       },
     },
@@ -125,14 +118,7 @@ const adminOptions = {
       features: [makeUploadFeature('imagePath', 'icons')],
       options: {
         properties: {
-          metadata: {
-            type: 'mixed',
-            isVisible: { list: false, edit: true, show: true },
-            components: {
-              edit: JsonEditor,
-              show: JsonEditor,
-            },
-          },
+          metadata: { type: 'mixed' },
         },
       },
     },
@@ -141,14 +127,7 @@ const adminOptions = {
       features: [makeUploadFeature('imagePath', 'employees')],
       options: {
         properties: {
-          metadata: {
-            type: 'mixed',
-            isVisible: { list: false, edit: true, show: true },
-            components: {
-              edit: JsonEditor,
-              show: JsonEditor,
-            },
-          },
+          metadata: { type: 'mixed' },
         },
       },
     },
@@ -267,14 +246,7 @@ const adminOptions = {
       resource: { model: getModelByName('Service'), client: prisma },
       options: {
         properties: {
-          metadata: {
-            type: 'mixed',
-            isVisible: { list: false, edit: true, show: true },
-            components: {
-              edit: JsonEditor,
-              show: JsonEditor,
-            },
-          },
+          metadata: { type: 'mixed' },
         },
       },
     },
@@ -282,14 +254,7 @@ const adminOptions = {
       resource: { model: getModelByName('ServiceFeature'), client: prisma },
       options: {
         properties: {
-          metadata: {
-            type: 'mixed',
-            isVisible: { list: false, edit: true, show: true },
-            components: {
-              edit: JsonEditor,
-              show: JsonEditor,
-            },
-          },
+          metadata: { type: 'mixed' },
         },
       },
     },
